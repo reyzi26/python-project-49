@@ -9,3 +9,6 @@
 
 ### step 6 asciinema
 [![asciicast](https://asciinema.org/a/ltYPqwRm3wS2SYKQv949CXIqr.svg)](https://asciinema.org/a/ltYPqwRm3wS2SYKQv949CXIqr)
+
+### step 7 asciinema
+[![asciicast](https://asciinema.org/a/LOem197SiVGHdbUdTCYA4SRQ3.svg)](https://asciinema.org/a/LOem197SiVGHdbUdTCYA4SRQ3)
