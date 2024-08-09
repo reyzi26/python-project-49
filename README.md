@@ -4,11 +4,14 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/c81e6189c284a07bac4e/maintainability)](https://codeclimate.com/github/reyzi26/python-project-49/maintainability)
 
-### step 5 asciinema
+### Step 5 asciinema
 [[!Asciinema](https://asciinema.org/connect/1010b710-e886-4423-b479-d6877cfdac91)]
 
-### step 6 asciinema
+### Step 6 asciinema
 [![asciicast](https://asciinema.org/a/ltYPqwRm3wS2SYKQv949CXIqr.svg)](https://asciinema.org/a/ltYPqwRm3wS2SYKQv949CXIqr)
 
-### step 7 asciinema
+### Step 7 asciinema
 [![asciicast](https://asciinema.org/a/LOem197SiVGHdbUdTCYA4SRQ3.svg)](https://asciinema.org/a/LOem197SiVGHdbUdTCYA4SRQ3)
+
+### Step 8 asciinema
+[![asciicast](https://asciinema.org/a/UU7zUWo8lpTKzrMULEUP2lj5l.svg)](https://asciinema.org/a/UU7zUWo8lpTKzrMULEUP2lj5l)
