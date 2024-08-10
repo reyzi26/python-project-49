@@ -7,9 +7,10 @@ def run_game_progression():
     start = random.randint(1, 20)
     expression = []
     for i in range(length):
-        expression.append(start)
+        expression.append(str(start))
         start += step
     number_random = random.choice(expression)
     index_num = expression.index(number_random)
     expression[index_num] = '..'
-    return expression, str(number_random)
+    res = ' '.join(expression)
+    return res, str(number_random)
