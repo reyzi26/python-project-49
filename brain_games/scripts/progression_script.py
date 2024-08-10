@@ -4,7 +4,7 @@ from ..games.general_module import general_function
 
 
 def main():
-    intro = 'Find the greatest common divisor of given numbers.'
+    intro = 'What number is missing in the progression?'
     general_function(run_game_progression, intro)
 
 
