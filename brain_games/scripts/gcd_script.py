@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from ..games.brain_gcd import run_game_gcd
-from ..games.general_module import general_function
+from ..engine import engine_function
+from ..game_constants import INSTRUCTION_GCD
 
 
 def main():
-    intro = 'Find the greatest common divisor of given numbers.'
-    general_function(run_game_gcd, intro)
+    engine_function(run_game_gcd, INSTRUCTION_GCD)
 
 
 if __name__ == '__main__':

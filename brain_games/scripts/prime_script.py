@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from ..games.brain_prime import run_game_prime
-from ..games.general_module import general_function
+from ..engine import engine_function
+from ..game_constants import INSTRUCTION_PRIME
 
 
 def main():
-    intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    general_function(run_game_prime, intro)
+    engine_function(run_game_prime, INSTRUCTION_PRIME)
 
 
 if __name__ == '__main__':

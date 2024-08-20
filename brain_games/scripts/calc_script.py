@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from ..games.brain_calc import run_game_calc
-from ..games.general_module import general_function
+from ..engine import engine_function
+from ..game_constants import INSTRUCTION_CALC
 
 
 def main():
-    intro = 'What is the result of the expression?'
-    general_function(run_game_calc, intro)
+    engine_function(run_game_calc, INSTRUCTION_CALC)
 
 
 if __name__ == '__main__':

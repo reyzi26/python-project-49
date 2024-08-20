@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from ..games.brain_even import run_game_even
-from ..games.general_module import general_function
+from ..engine import engine_function
+from ..game_constants import INSTRUCTION_EVEN
 
 
 def main():
-    intro = 'Answer "yes" if the number is even, otherwise answer "no".'
-    general_function(run_game_even, intro)
+    engine_function(run_game_even, INSTRUCTION_EVEN)
 
 
 if __name__ == '__main__':

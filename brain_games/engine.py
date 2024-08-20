@@ -1,14 +1,12 @@
-#!/usr/bin/env python3
 import prompt
+from brain_games.game_constants import COUNT_ROUNDS
 
 
-def general_function(my_func, intro):
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print(intro)
+def engine_function(my_func, instruction):
+    name = prompt.string("Welcome to the Brain Games!\nMay I have your name? ")
+    print(f'Hello, {name}!\n{instruction}')
     count = 0
-    while count != 3:
+    for _ in range(COUNT_ROUNDS):
         expression, res = my_func()
         print(f'Question: {expression}')
         answer = input('Your answer: ')
@@ -20,5 +18,5 @@ def general_function(my_func, intro):
                   f"'{res}'.")
             print(f"Let's try again, {name}!")
             break
-    if count == 3:
+    if count == COUNT_ROUNDS:
         print(f'Congratulations, {name}!')
