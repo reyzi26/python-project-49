@@ -1,17 +1,26 @@
 import random
 
 
-def run_game_calc():
-    operators = ['+', '-', '*']
-    operator = random.choice(operators)
-    num_1 = random.randint(1, 100)
-    num_2 = random.randint(1, 100)
-    expression = f"{num_1} {operator} {num_2}"
+def get_random_number():
+    num = random.randint(1, 100)
+    return num
+
+
+def get_random_math_sign_and_result(first_num, second_num):
+    signs = ['+', '-', '*']
+    sign = random.choice(signs)
     res = 0
-    if operator == "+":
-        res = num_1 + num_2
-    elif operator == '-':
-        res = num_1 - num_2
+    if sign == "+":
+        res = first_num + second_num
+    elif sign == '-':
+        res = first_num - second_num
     else:
-        res = num_1 * num_2
-    return expression, str(res)
+        res = first_num * second_num
+    return sign, res
+
+
+def get_math_question_and_result():
+    first_num, second_num = get_random_number(), get_random_number()
+    sign, result = get_random_math_sign_and_result(first_num, second_num)
+    question = f'{first_num} {sign} {second_num}'
+    return question, str(result)

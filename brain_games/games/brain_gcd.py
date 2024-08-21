@@ -2,9 +2,18 @@ import math
 import random
 
 
+def get_random_number():
+    num = random.randint(1, 11)
+    return num
+
+
+def get_result(first_number, second_number):
+    result = math.gcd(first_number, second_number)
+    return result
+
+
 def run_game_gcd():
-    num_1 = random.randint(1, 11)
-    num_2 = random.randint(1, 11)
-    expression = f'{num_1} {num_2}'
-    res = math.gcd(num_1, num_2)
-    return expression, str(res)
+    first_number, second_number = get_random_number(), get_random_number()
+    expression = f'{first_number} {second_number}'
+    result = get_result(first_number, second_number)
+    return expression, str(result)

@@ -1,8 +1,13 @@
 import random
 
 
+def get_random_number():
+    num = random.randint(1, 100)
+    return num
+
+
 def run_game_prime():
-    expression = random.randint(1, 100)
+    expression = get_random_number()
     count = 0
     res = ''
     for i in range(1, expression + 1):
